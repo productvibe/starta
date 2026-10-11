@@ -1,0 +1,50 @@
+{
+  "id": "tasks",
+  "title": "Tasks",
+  "block": "datatable",
+  "view": "task",
+  "icon": "layers",
+  "file": "tasks.json",
+  "order": 10,
+  "purpose": "What you have to do, and when each of it is due.",
+  "fields": [
+    {
+      "key": "name",
+      "label": "Name",
+      "kind": "line",
+      "tab": "Details"
+    },
+    {
+      "key": "category",
+      "label": "Type",
+      "kind": "category",
+      "tab": "Details"
+    },
+    {
+      "key": "status",
+      "label": "Status",
+      "kind": "status",
+      "tab": "Details"
+    },
+    {
+      "key": "person",
+      "label": "Person",
+      "kind": "person",
+      "hint": "Whose it is, or who it is waiting on",
+      "tab": "Details"
+    },
+    {
+      "key": "due",
+      "label": "Due",
+      "kind": "date",
+      "tab": "Details"
+    },
+    {
+      "key": "note",
+      "label": "Note",
+      "kind": "text",
+      "hint": "What it is, and what it is waiting for",
+      "tab": "Note"
+    }
+  ]
+}

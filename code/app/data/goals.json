@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "id": "net-revenue-retention",
+      "name": "Net revenue retention",
+      "owner": "team",
+      "start": "101",
+      "value": "104",
+      "target": "110",
+      "unit": "%",
+      "due": "2026-Q4",
+      "description": "Revenue from last year's customers today ÷ their revenue a year ago"
+    },
+    {
+      "id": "renewals-closed",
+      "name": "Renewals closed",
+      "owner": "me",
+      "start": "0",
+      "value": "7",
+      "target": "9",
+      "due": "2026-Q4",
+      "description": "Renewals due this quarter that are signed"
+    },
+    {
+      "id": "healthy-accounts",
+      "name": "Healthy accounts",
+      "owner": "me",
+      "start": "18",
+      "value": "18",
+      "target": "20",
+      "due": "2026-Q4",
+      "description": "My accounts rated green in the monthly health check"
+    },
+    {
+      "id": "days-to-go-live",
+      "name": "Days to go live",
+      "owner": "team",
+      "start": "41",
+      "value": "34",
+      "target": "30",
+      "unit": "days",
+      "direction": "down",
+      "due": "2026-Q4",
+      "description": "Average days from signed contract to first active use"
+    },
+    {
+      "id": "customer-satisfaction",
+      "name": "Customer satisfaction",
+      "owner": "company",
+      "start": "4.2",
+      "value": "4.4",
+      "target": "4.5",
+      "due": "2026-Q4",
+      "description": "Average CSAT score after a support case, out of 5"
+    }
+  ]
+}

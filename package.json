@@ -1,0 +1,15 @@
+{
+  "name": "starta-cli",
+  "version": "0.1.0",
+  "description": "Start your own work app and add, remove and update its modules.",
+  "type": "module",
+  "bin": {
+    "starta": "cli/starta.mjs"
+  },
+  "files": [
+    "cli/"
+  ],
+  "engines": {
+    "node": ">=20.12"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": "maya-okafor",
+      "name": "Maya Okafor",
+      "role": "Head of operations",
+      "organisation": "Tallow & Co",
+      "context": "Main contact at Tallow & Co, my largest account.",
+      "lastContact": "2026-10-08",
+      "note": "Wants the renewal proposal a week before the business review."
+    },
+    {
+      "id": "daniel-reyes",
+      "name": "Daniel Reyes",
+      "role": "IT lead",
+      "organisation": "Harbourline Logistics",
+      "context": "Owns the rollout at Harbourline.",
+      "lastContact": "2026-10-06",
+      "note": "Blocked on single sign-on until our security review is signed."
+    },
+    {
+      "id": "priya-nair",
+      "name": "Priya Nair",
+      "role": "Product manager",
+      "organisation": "Brightlane",
+      "context": "Owns reporting in the product; my route for customer feature requests.",
+      "lastContact": "2026-10-09"
+    },
+    {
+      "id": "tom-becker",
+      "name": "Tom Becker",
+      "role": "Account executive",
+      "organisation": "Brightlane",
+      "context": "Sold Harbourline and Fernwood; we share those accounts.",
+      "lastContact": "2026-10-07"
+    },
+    {
+      "id": "lena-hoffmann",
+      "name": "Lena Hoffmann",
+      "role": "Support team lead",
+      "organisation": "Brightlane",
+      "context": "Escalations go through her.",
+      "lastContact": "2026-10-02"
+    }
+  ]
+}

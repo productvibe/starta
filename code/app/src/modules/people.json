@@ -1,0 +1,50 @@
+{
+  "id": "people",
+  "title": "People",
+  "block": "datatable",
+  "view": "table",
+  "icon": "users",
+  "file": "people.json",
+  "order": 20,
+  "purpose": "Who you work with, and what to know about each of them.",
+  "fields": [
+    {
+      "key": "name",
+      "label": "Name",
+      "kind": "line",
+      "tab": "Details"
+    },
+    {
+      "key": "role",
+      "label": "Role",
+      "kind": "line",
+      "tab": "Details"
+    },
+    {
+      "key": "organisation",
+      "label": "Organisation",
+      "kind": "line",
+      "tab": "Details"
+    },
+    {
+      "key": "context",
+      "label": "How you know them",
+      "kind": "text",
+      "hint": "Where you met, what you work on together",
+      "tab": "Details"
+    },
+    {
+      "key": "lastContact",
+      "label": "Last contact",
+      "kind": "date",
+      "tab": "Details"
+    },
+    {
+      "key": "note",
+      "label": "Notes",
+      "kind": "text",
+      "hint": "Working notes: anything worth knowing before the next meeting",
+      "tab": "Note"
+    }
+  ]
+}

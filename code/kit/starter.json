@@ -1,0 +1,3 @@
+{
+  "modules": ["about", "goals", "tasks", "people", "wiki"]
+}

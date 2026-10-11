@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": "tallow-renewal-proposal",
+      "name": "Send Tallow & Co the renewal proposal",
+      "category": "followup",
+      "status": "in-progress",
+      "person": "maya-okafor",
+      "due": "2026-10-14",
+      "note": "Two options: same plan for two years, or the larger plan with reporting."
+    },
+    {
+      "id": "harbourline-security-review",
+      "name": "Chase the security review so Harbourline can switch on single sign-on",
+      "category": "followup",
+      "status": "blocked",
+      "person": "daniel-reyes",
+      "due": "2026-10-13",
+      "note": "Rollout cannot go further until it is signed."
+    },
+    {
+      "id": "export-request-to-product",
+      "name": "Pass the CSV export request from three customers to Priya",
+      "category": "request",
+      "status": "backlog",
+      "person": "priya-nair",
+      "due": "2026-10-16"
+    },
+    {
+      "id": "fernwood-kickoff",
+      "name": "Book the Fernwood kick-off with Tom",
+      "category": "task",
+      "status": "backlog",
+      "person": "tom-becker",
+      "due": "2026-10-15"
+    },
+    {
+      "id": "q4-business-reviews",
+      "name": "Draft the Q4 business review plan for my ten largest accounts",
+      "category": "deliverable",
+      "status": "backlog",
+      "due": "2026-10-24"
+    },
+    {
+      "id": "read-account-handover",
+      "name": "Read the account handover notes",
+      "category": "task",
+      "status": "done"
+    }
+  ]
+}

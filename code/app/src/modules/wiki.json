@@ -1,0 +1,8 @@
+{
+  "id": "wiki",
+  "title": "Wiki",
+  "block": "pages",
+  "icon": "book",
+  "order": 60,
+  "purpose": "What you learn: how your work works, kept as pages."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "about",
+  "title": "About",
+  "block": "profile",
+  "icon": "compass",
+  "file": "about.md",
+  "order": 70,
+  "purpose": "Who you are at work: your role."
+}

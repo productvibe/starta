@@ -1,0 +1,62 @@
+{
+  "id": "goals",
+  "title": "Goals",
+  "block": "datatable",
+  "view": "goal",
+  "icon": "target",
+  "file": "goals.json",
+  "order": 35,
+  "purpose": "What you are aiming for this year, and whether each is on track.",
+  "fields": [
+    {
+      "key": "name",
+      "label": "Name",
+      "kind": "line"
+    },
+    {
+      "key": "owner",
+      "label": "Owner",
+      "kind": "owner"
+    },
+    {
+      "key": "start",
+      "label": "Start",
+      "kind": "number",
+      "hint": "Where it stood when the period began; sets the pace to the target"
+    },
+    {
+      "key": "value",
+      "label": "Value",
+      "kind": "number",
+      "hint": "Where it stands now"
+    },
+    {
+      "key": "target",
+      "label": "Target",
+      "kind": "number"
+    },
+    {
+      "key": "unit",
+      "label": "Unit",
+      "kind": "line",
+      "hint": "%, days, or blank for a count"
+    },
+    {
+      "key": "direction",
+      "label": "Direction",
+      "kind": "direction"
+    },
+    {
+      "key": "due",
+      "label": "Target date",
+      "kind": "period",
+      "hint": "A day, a month or a quarter"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "kind": "text",
+      "hint": "How it is counted"
+    }
+  ]
+}
