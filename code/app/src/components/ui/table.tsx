@@ -108,6 +108,8 @@ function TableScroll({ children }: { children: React.ReactNode }) {
   const shown = hover || active || drag.current != null
 
   return (
+    // No frame around a table, in any theme: rows carry their own rules and
+    // the table sits open on the page. Themes never add one.
     <div
       ref={box}
       data-slot="table-container"

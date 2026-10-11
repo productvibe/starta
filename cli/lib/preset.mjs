@@ -199,8 +199,7 @@ export const STYLES = [
       "shadcn/ui's default look, measured on ui.shadcn.com (dashboard-01 and " +
       "the create page's preview, 2026-10-11): Neutral greys, a near-black " +
       "primary, 0.625rem corners, cards with a hairline and a faint shadow, " +
-      "the open sidebar row on the accent grey, medium table headings in a " +
-      "framed table, Geist",
+      "the open sidebar row on the accent grey, medium table headings, Geist",
     colour: "grey",
     font: "geist",
     css: `/* Cards: a hairline and shadcn's shadow-xs. */
@@ -225,12 +224,7 @@ export const STYLES = [
 [data-slot="sidebar-menu-button"][data-active] svg {
   color: var(--sidebar-accent-foreground);
 }
-/* Tables: framed in a hairline with the radius, row rules only, headings
-   medium in the text colour, 40px tall. */
-[data-slot="table-container"] {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
+/* Tables: row rules only, headings medium in the text colour, 40px tall. */
 [data-slot="table-head"] {
   color: var(--foreground);
   font-weight: 500;
@@ -775,11 +769,9 @@ main [role="tab"][aria-selected="true"],
   box-shadow: none;
 }
 /* Measured on neobrutalism.dev's table, checkbox, badge and card pages
-   (2026-10-11). Tables: a 2px frame and 2px rules under every row, no
-   column lines; a row under the pointer takes a wash of the colour. */
-[data-slot="table-container"] {
-  border: 2px solid var(--foreground);
-}
+   (2026-10-11). Tables: 2px rules under every row, no column lines and no
+   frame (no theme frames a table); a row under the pointer takes a wash of
+   the colour. */
 [data-slot="table-row"] {
   border-bottom-width: 2px;
 }

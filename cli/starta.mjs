@@ -56,9 +56,11 @@ const DEFAULT_KIT =
 
 const HELP = `starta: start your own work app and add modules to it
 
-  starta init <folder> [--preset <code>]   start a new work app: About, Goals,
-                                           Tasks, People and Wiki, drawn in
-                                           the preset's theme
+  starta init <folder> [--preset <code>] [--modules <id,id>]
+                                           start a new work app: About, Goals,
+                                           Tasks, People and Wiki (or About and
+                                           the modules named), drawn in the
+                                           preset's theme
   starta list                              the modules you can add
   starta add <module>... | --all           add modules, or every one
   starta remove <module>                   take a module out; its data stays
@@ -78,6 +80,7 @@ const { values: opts, positionals } = parseArgs({
     to: { type: "string" },
     template: { type: "string" },
     preset: { type: "string" },
+    modules: { type: "string" },
     all: { type: "boolean", default: false },
     "dry-run": { type: "boolean", default: false },
     json: { type: "boolean", default: false },
@@ -107,7 +110,9 @@ function init([folder]) {
     throw new Error(
       `the kit has no template "${opts.template}" (it has: ${Object.keys(kit.templates).join(", ")})`,
     )
-  const modules = [...new Set([...kit.starter, ...(template?.modules ?? [])])]
+  const modules = [
+    ...new Set([...pickedModules(kit), ...(template?.modules ?? [])]),
+  ]
   const code = presetCode(opts.preset ?? encodePreset(DEFAULT_PRESET))
 
   const blocks = blocksFor(kit, modules)
@@ -144,6 +149,25 @@ function init([folder]) {
   const kind = template ? `${template.title ?? opts.template} ` : ""
   say(`Started a ${kind}work app in ${folder}, with ${titles(kit, modules)}.`)
   say(`Next: cd ${folder}/app && npm run dev`)
+}
+
+const ALWAYS = "about"
+
+/** The modules `init` makes: `--modules` (a comma list of the kit's module
+ *  ids), else the kit's starter set. About is in every app, picked or not:
+ *  Claude interviews the person into it. */
+function pickedModules(kit) {
+  if (opts.modules === undefined) return kit.starter
+  const ids = opts.modules
+    .split(",")
+    .map((id) => id.trim())
+    .filter(Boolean)
+  const unknown = ids.filter((id) => !kit.modules[id])
+  if (unknown.length)
+    throw new Error(
+      `the kit has no module ${unknown.map((u) => `"${u}"`).join(", ")} (it has: ${Object.keys(kit.modules).join(", ")})`,
+    )
+  return [...new Set([ALWAYS, ...ids])]
 }
 
 function list() {

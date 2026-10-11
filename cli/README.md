@@ -6,7 +6,7 @@ The person sees modules only; the block a module is built on comes and
 goes with it.
 
 ```
-node starta.mjs init <folder> [--preset <code>]
+node starta.mjs init <folder> [--preset <code>] [--modules <id,id>]
 node starta.mjs list
 node starta.mjs add <module>... | --all
 node starta.mjs remove <module>
@@ -15,7 +15,8 @@ node starta.mjs apply --preset <code>
 ```
 
 `init` gives About, Goals, Tasks, People and Wiki (`kit/starter.json` in
-the kit). `add --all` adds every module the app
+the kit), or, with `--modules`, About and the modules named: every app has
+About. `add --all` adds every module the app
 does not have yet; a named module the app already has is skipped.
 
 Options: `--kit <folder|git url>` (default: `$STARTA_KIT`, else `../code` beside the CLI, else the public repo `github:productvibe/starta`),

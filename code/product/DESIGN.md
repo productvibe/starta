@@ -50,6 +50,9 @@ The intent, in five rules:
 In this app (from Voni's "Tables are prose tables" and "One sheet, one shape"):
 
 - **Compose from `app/src/components/ui/table.tsx`**, never a raw `<table>`.
+- **No frame.** A table has no border around it, in every theme: rows carry
+  their own rules and the table sits open on the page. Set in
+  `components/ui/table.tsx`; a theme never adds one.
 - **An enum is muted text.** A status or a type in a cell is a word in
   `text-muted-foreground`, not a badge.
 - **Cells wrap.** No fixed column widths: text cells take
