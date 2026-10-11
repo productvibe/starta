@@ -12,7 +12,7 @@ one change, check it in the browser, then the next. For why these work, see
 ## Start and find your way
 
 - "Start my work app and open it in the browser."
-- "Is my app running? If not, start it on port 9920."
+- "Is my app running? If not, start it on port 9950."
 - "Give me a tour of my app: what each module in the sidebar is for, in one line each."
 - "Which modules do I have, and which block is each one built on?"
 - "What changed in my app since yesterday?"

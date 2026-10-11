@@ -12,7 +12,7 @@ You have finished the course. You can start your app, keep it current, change it
 | --- | --- | --- |
 | Artifact maker | Build small things with Claude in chat | Before the course |
 | Runner | Start the app, find your way, change wording and data by asking | Lessons 1–5 |
-| Modifier | Change existing modules and undo a change | Lesson 6 |
+| Modifier | Change existing modules and take a change back | Lesson 6 |
 | Module builder | Design a module for your own work and have Claude build it on a block | Lesson 7, and from here on |
 
 Lesson 8 made you a daily user. The next step is to become a module builder in earnest: to notice what your job needs and turn it into a module without a lesson to follow.
@@ -46,7 +46,7 @@ These are look-up articles, not lessons. Read one when you need it.
 
 | When you want to | Read |
 | --- | --- |
-| Save a point you can go back to, and undo | [Checkpoints](/wiki/advanced/checkpoints) |
+| Save a point you can go back to, and go back | [Checkpoints](/wiki/advanced/checkpoints) |
 | Run several modules on one block | [Many modules on one block](/wiki/advanced/second-module-same-block) |
 | Find your way in the code | [Reading the code](/wiki/advanced/reading-the-code) |
 | Change how a whole block works | [Changing a block](/wiki/advanced/changing-a-block) |

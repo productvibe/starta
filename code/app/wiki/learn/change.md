@@ -1,6 +1,6 @@
 ---
 title: "Lesson 6: Change a module"
-description: Add a column, switch a view, rename and reorder a module, with a checkpoint and one undo.
+description: Add a column, switch a view, rename and reorder a module, save a checkpoint with git and take one change back.
 order: 7
 ---
 
@@ -65,7 +65,7 @@ Keep the app open in your browser beside the Code tab, so you see each change la
 The People section in Settings now lists Region among its fields. Your data was not touched: every person you added is still there.
 
 {% callout title="Checkpoints today, and later" %}
-The app has no checkpoint or undo button yet. Claude saves checkpoints for you with git, a tool that keeps every saved version of your folder. You ask in words, as above. See [Checkpoints and undo](/wiki/advanced/checkpoints) for how it works and how to go back further than one step.
+A checkpoint and undo button inside the app is planned, not built. Today a checkpoint is a version Claude saves with git, a tool that keeps every saved version of your folder, and undo means Claude puts files back from that history. A new app does not use git until Claude sets it up at your first checkpoint. You ask in words, as above. See [Checkpoints and undo](/wiki/advanced/checkpoints) for how it works and how to go back further than one step.
 {% /callout %}
 
 ## One change at a time

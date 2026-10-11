@@ -16,7 +16,6 @@ block and a module never share a name. Each block is a folder in
 | `profile` | One read-only page about you: your role | About | `/about` | Nothing |
 | `datatable` | Rows with fields set per module, in a table, task or goal view, with a sheet per row | Tasks, People, Goals, and your own | `/<module>` | Add, edit, delete rows; tick done in the task view |
 | `pages` | Markdoc pages with a folder tree, a reader, search and downloads | Wiki | `/wiki/…` | Nothing; Claude writes pages |
-| `datamart` | Local tables for drill-down | — | — | Later, not built |
 
 ## What each block's data file looks like
 
@@ -54,6 +53,7 @@ Each block folder has a `block.json`. Every key is optional.
 | `needs` | The blocks it imports from | None of the kit's blocks yet |
 | `packages` | Extra software only this block uses | None of the kit's blocks yet |
 | `data` | Folders of content it starts with, copied once | None of the kit's blocks yet |
+| `ownHeader` | The block draws its own page header | None of the kit's blocks yet |
 
 To change a block itself, read
 [Changing a block](/wiki/advanced/changing-a-block) first: a block change

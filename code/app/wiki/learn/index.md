@@ -1,6 +1,6 @@
 ---
 title: Learn
-description: The course that takes you from an empty folder to a work app with your own content and a module you designed.
+description: The course that takes you from one setup prompt to a work app with your own content and a module you designed.
 order: 3
 icon: graduation-cap
 ---
@@ -32,7 +32,7 @@ You move along four stages. The first hour takes you through two of them.
 |---|---|---|
 | Artifact maker | Make small things with Claude in chat: a table, a summary, a draft | Where you start |
 | Runner | Start your app, find your way around, change wording and data by asking Claude | First hour, lessons 1 to 5 |
-| Modifier | Change the modules you have, save a checkpoint, undo a change | First hour, lessons 6 and 7 |
+| Modifier | Change the modules you have, and take a change back | First hour, lessons 6 and 7 |
 | Module builder | Design a new module for your own work and have Claude build it on a block | After the first hour, at your own pace |
 
 Lesson 7 gives you a first taste of module building with a guided example, Accounts. Becoming a module builder is what you teach yourself afterwards; [What next](/wiki/learn/next) shows the way.
@@ -55,19 +55,19 @@ Lesson 7 gives you a first taste of module building with a guided example, Accou
 Lessons 1 to 7 add up to one hour.
 
 {% callout title="If the hour runs long" %}
-The first hour is meant to fit in an hour. If a step takes much longer, the kit needs fixing, not you. Tell Claude what happened in plain words, for example: "The app did not open after setup. What went wrong?" Then note it for whoever looks after the kit.
+The first hour is meant to fit in an hour. If a step takes much longer, the kit needs fixing, not you. Tell Claude what happened in plain words, for example: "The app did not open after I pasted the setup prompt. What went wrong?" Then note it for whoever looks after the kit.
 {% /callout %}
 
 ## Sam's first hour
 
 Sam is a customer success manager at Brightlane, a software company, and new in the role. Their hour looks like this:
 
-1. Sam opens an empty folder in the Code tab and asks Claude to set up the work app. It opens in the browser.
+1. Sam copies the setup prompt from **Get Code** on starta.dev/create and pastes it into the Code tab. Claude makes the work app and opens it in the browser.
 2. Claude interviews Sam about the role and fills in About.
 3. Sam adds five goals, such as renewals closed and net revenue retention, each with a start value, a target and a target date.
 4. Sam adds Maya Okafor at Tallow & Co and Daniel Reyes at Harbourline Logistics to People.
 5. Sam lists this week's follow-ups in Tasks.
-6. Sam adds a Region column to People, saves a checkpoint, and undoes one change to see that it works.
+6. Sam adds a Region column to People, has Claude save a version with git, and takes one change back to see that it works.
 7. Sam builds an Accounts module with the columns they need and adds their real accounts.
 
 Sam leaves with a list of follow-ups to open tomorrow morning.

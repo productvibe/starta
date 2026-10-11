@@ -22,11 +22,11 @@ If a recent change caused it, you can also say: "Take back your last change."
 
 | You see | It usually means | Ask Claude |
 |---|---|---|
-| "This site can't be reached" or "Connection refused" at localhost:9920 | The app is not running. It stops when you close the Claude app or restart your laptop. | "Start my app." See [Start your app on another day](/wiki/guides/start-each-day). |
+| "This site can't be reached" or "Connection refused" at localhost:9950 | The app is not running. It stops when you close the Claude app or restart your laptop. | "Start my app." See [Start your app on another day](/wiki/guides/start-each-day). |
 | A page that says "Oops!" with a message under it | Something in that page failed. In your app, the message says what. | "The Tasks page says: … Fix it." |
 | "Could not read …tasks.json" | The data file has a mistake, often a missing comma or quote. | "tasks.json cannot be read. Find the mistake and fix it without losing rows." |
 | "404" and "The requested page could not be found" | The address does not exist, often after a module's `id` changed. | Open the module from the sidebar, or "Why does /people show 404?" |
-| A blank white page | The page failed before it could draw. | "The app shows a blank page at localhost:9920. Check the app's log and fix it." |
+| A blank white page | The page failed before it could draw. | "The app shows a blank page at localhost:9950. Check the app's log and fix it." |
 | "Changed on disk — reload" when you save a row | Claude, or another program, wrote the file after you opened the page. Nothing was saved. | Nothing. Copy what you typed, reload, and enter it again. |
 | "… could not be saved. Reload to see what is stored" | The save failed for another reason. | Reload. If it happens again: "Saving a row in People fails. Find out why." |
 | A module is gone from the sidebar | Its module file was removed, or has a mistake. | "Accounts is missing from the sidebar. Find out why." |
@@ -81,8 +81,8 @@ new column empty.
 - Ask: "What was the cause, and what did you change?" See
   [Review a change](/wiki/guides/review-a-change).
 
-{% callout title="Port 9920" %}
-Your app always runs at http://localhost:9920. If Claude says something else
+{% callout title="Port 9950" %}
+Your app always runs at http://localhost:9950. If Claude says something else
 is using that port, ask it to find out what, and do not let it stop a program
 you do not recognise.
 {% /callout %}

@@ -44,7 +44,7 @@ you type or paste.
 Sam is a customer success manager at Brightlane, a software company. They are
 new in the role. In their first hour they:
 
-1. ask Claude to set up their work app, and it opens in their browser;
+1. paste the setup prompt from starta.dev/create into the Code tab, and Claude makes their work app and opens it in their browser;
 2. answer Claude's questions about their role, and Claude writes their About page;
 3. add the goals they are measured on, such as renewals closed and healthy accounts;
 4. add the people they work with at Tallow & Co and Harbourline Logistics;

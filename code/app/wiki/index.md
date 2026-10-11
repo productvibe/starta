@@ -19,7 +19,7 @@ commands.
 |---|---|---|
 | [The idea](/wiki/idea) | Understand what a work app is, and why you would build your own | Explanation |
 | [How it works](/wiki/how-it-works) | See the pieces: files, modules, blocks and connectors | Explanation |
-| [Learn](/wiki/learn) | Go from an empty folder to a module of your own, lesson by lesson | Course |
+| [Learn](/wiki/learn) | Go from one setup prompt to a module of your own, lesson by lesson | Course |
 | [Guides](/wiki/guides) | Get one job done, such as importing data or fixing a problem | How-to |
 | [Advanced](/wiki/advanced) | Go further when you need to, such as checkpoints, mentors or skills | Articles |
 | [Reference](/wiki/reference) | Look up a word, a module, a field kind or a prompt | Reference |

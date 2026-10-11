@@ -6,7 +6,7 @@ order: 2
 ---
 
 Your work app is three pieces on your own laptop: a **folder** of files, a
-**browser tab** at `http://localhost:9920` that shows them, and **Claude** in
+**browser tab** at `http://localhost:9950` that shows them, and **Claude** in
 the Code tab of the Claude desktop app, which changes them. This page shows how
 the three fit together. The pages below go into each part.
 
@@ -15,12 +15,12 @@ the three fit together. The pages below go into each part.
 | Piece | What it is | What you do with it |
 |---|---|---|
 | The folder | Your app: its data files, its wiki pages, its code | Nothing directly. You open it in the Code tab, and Claude reads and edits it |
-| The browser tab | The app's screen, served from your laptop at `localhost:9920` | Read your modules, tick tasks, add and edit rows |
+| The browser tab | The app's screen, served from your laptop at `localhost:9950` | Read your modules, tick tasks, add and edit rows |
 | The Code tab | Claude, opened on the folder | Ask for changes, new modules, imports, fixes and explanations |
 
 `localhost` means "this computer". The address works only on your laptop, and
 only while the app's server is running. Claude starts that server for you and
-keeps it running on port 9920. If the tab ever says it cannot connect, ask
+keeps it running on port 9950. If the tab ever says it cannot connect, ask
 Claude: "Is my app running? Start it if not."
 
 ## What runs where

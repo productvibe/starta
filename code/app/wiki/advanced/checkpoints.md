@@ -5,9 +5,9 @@ order: 1
 ---
 
 A checkpoint is a saved copy of your whole app at one moment: code, module
-files, data and wiki. Undo means going back to a checkpoint. Your app has no
-checkpoint or undo button yet. Claude does both for you with git, a tool that
-records versions of a folder. You never touch git yourself; you ask in plain
+files, data and wiki. Undo means going back to a checkpoint. A checkpoint and
+undo button inside the app is planned, not built. Today Claude does both for
+you with git, a tool that records versions of a folder. You never touch git yourself; you ask in plain
 words.
 
 ## When you need it
@@ -22,7 +22,7 @@ A good habit: one checkpoint before each change, one after it works.
 
 ## How it works in your app
 
-- **Git may not be set up yet.** A new app is not always a git folder. The
+- **Git is not set up at first.** Setting up an app does not turn git on. The
   first time you ask for a checkpoint, Claude checks and, if needed, sets git
   up and saves a first checkpoint of everything as it is.
 - **A checkpoint is a commit.** Claude saves every changed file with a short

@@ -44,9 +44,9 @@ What it never touches: your data files in `app/data/` and your wiki pages in
 `app/wiki/`. Those are yours from the start. This also
 means new wiki pages in the kit do not arrive with an update.
 
-Your theme is redrawn from the colour preset your app was made with. If you
-changed the theme, yours is kept and the preset's is written beside it as a
-`.kit` file.
+Your theme is redrawn from the look your app was made with: its preset code,
+such as `fQnA`, kept in `starta.json`. If you changed the theme, yours is kept
+and the preset's is written beside it as a `.kit` file.
 
 ## The `.kit` files
 

@@ -17,7 +17,7 @@ you check the result in the browser. You read enough to steer. See
 No. Claude runs every command and asks your approval first. You type prompts.
 
 **Where does my app run? Can anyone else see it?**
-On your own laptop, at http://localhost:9920. Nobody else can open it. Nothing
+On your own laptop, at http://localhost:9950. Nobody else can open it. Nothing
 is hosted, and there is no sign-in.
 
 **Where is my data?**
@@ -28,6 +28,11 @@ In `app/data/`, one file per module, on your laptop. See
 You do, with Claude. A power user can mentor you: look at what you made, review
 a module file, share an idea. They do not build it for you. See
 [Working with a mentor](/wiki/advanced/mentors).
+
+**How do I make a new app?**
+Open starta.dev/create, pick a look, click **Get Code** and paste the prompt
+into the Code tab. Claude makes the app and starts it. See
+[Before you start](/wiki/learn/setup).
 
 ## Using it
 
@@ -75,12 +80,14 @@ later.
 **What if I break something?**
 Ask Claude to undo it. Claude keeps checkpoints with git when you ask it to
 save one, so save one before a bigger change: "Save a checkpoint called
-[before Accounts]." Undo inside the app is not built yet. See
+[before Accounts]." Undo inside the app is planned, not built. See
 [Checkpoints](/wiki/advanced/checkpoints).
 
 **Can I change how the app looks?**
 Settings → Appearance sets the colour of charts and of buttons, kept per
-browser. For fonts, corners or other colours, ask Claude.
+browser. For a new theme, colour, font or logo, ask Claude: it applies a new
+preset from starta.dev/create. For anything else, such as corners, ask Claude
+too.
 
 ## Connectors and sharing
 

@@ -6,7 +6,8 @@ order: 3
 
 A datatable module, such as Tasks, People or an Accounts module of your own, is
 defined by its **fields**: the columns it has and the kind of value each one
-holds. Its **view** decides whether the rows show as a table or as a checklist.
+holds. Its **view** decides whether the rows show as a table, a checklist or
+goal cards.
 Both live in the module file, so changing either is a request to Claude, not a
 code change.
 
@@ -94,8 +95,8 @@ against the target. It reads `start`, `value`, `target`, `unit`, `direction`
 and `due`. A goal shows On track when it is ahead of an even pace from its start
 value to its target over the period of its target date, and when it is met. It
 shows Off track when it is behind that pace, or when the period has ended and
-the target is not met. With no start value, it shows no badge until it is met
-or late.
+the target is not met. With no start value, or a target date of a single day,
+it shows no badge until it is met or late.
 
 ## The bar above the rows
 

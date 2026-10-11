@@ -4,7 +4,7 @@ description: Replace the example goals with what you are measured on, each with 
 order: 4
 ---
 
-In this lesson you put what you are measured on into Goals. Each goal gets a value, a start value, a target and a target date, so the app can tell you whether you are on track. Time: 8 minutes.
+In this lesson you put what you are measured on into Goals. Each goal gets a value, a start value, a target and a target date, so the app can tell you whether you are on track. If Claude already put your goals in Goals during [lesson 1](/wiki/learn/start), use this lesson to check them and fill any gaps. Time: 8 minutes.
 
 ## Goal
 
@@ -16,12 +16,12 @@ Your goals are why your tasks matter. With them in the app, you see at a glance 
 
 ## Steps
 
-1. **Open Goals** in your browser and keep the tab open. It shows the example goals as cards, with the first one drawn large on top.
+1. **Open Goals** in your browser and keep the tab open. It shows your goals from lesson 1, or the example goals, as cards, with the first one drawn large on top.
 2. **List what you are measured on.** Your About page may already say. If you are not sure, ask:
 
    "Based on my About page, what am I most likely measured on? Suggest three to five goals, each with how it is counted. Change nothing yet."
 
-3. **Replace the examples with yours.** Type something like:
+3. **Replace the examples with yours**, if they are still there, or correct the goals Claude wrote. Type something like:
 
    "Remove the example goals. Then add these, each with where it stood at the start of the quarter, where it is now, the target and the target date:
    Renewals closed: started at 5, now 7, target 9 by the end of Q4.
@@ -59,7 +59,7 @@ Your goals are why your tasks matter. With them in the app, you see at a glance 
 |---|---|
 | On track | The goal is met, or it is ahead of an even pace from its start value to its target over its period |
 | Off track | It is behind that pace, or the period has ended and the target was not met |
-| No badge | The start value is unknown, or the target date is a single day, so there is no pace to measure yet |
+| No badge | The goal is not met and its period has not ended, and the start value is unknown or the target date is a single day, so there is no pace to measure |
 
 An even pace means a straight line. If a quarter is one third gone, a goal that should rise from 5 to 8 should be at 6 or more to be on track.
 

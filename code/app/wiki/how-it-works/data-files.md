@@ -121,4 +121,5 @@ as a conflict.
 The files hold fictional example data until you replace it with your own. They
 are plain text, so you can ask Claude to read them back to you, search them, or
 bring in rows from Excel. Saving a checkpoint you can go back to is something
-you ask Claude to do with git; there is no checkpoint button in the app yet.
+you ask Claude to do with git; a checkpoint button in the app is planned, not
+built.

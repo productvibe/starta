@@ -13,7 +13,7 @@ what each role means in practice and why they belong to one person.
 | Role | It means | What you do | In Sam's week |
 |---|---|---|---|
 | Owner | The app, its code and its data are yours | Decide what the app is for and what goes in it | Sam decides People holds work contacts and working notes, nothing sensitive |
-| Operator | You keep it running | Ask Claude to start the app, fix a problem, take a newer kit | Monday morning Sam asks Claude to start the app; it opens at localhost:9920 |
+| Operator | You keep it running | Ask Claude to start the app, fix a problem, take a newer kit | Monday morning Sam asks Claude to start the app; it opens at localhost:9950 |
 | Builder | You change and extend it | Describe a change, have Claude make it, check it | Sam asks for a "Next meeting" column in People |
 | End user | You use it to do your job | Open it every day, tick tasks, read the wiki | Before a Tallow & Co meeting Sam reads their follow-ups and notes |
 

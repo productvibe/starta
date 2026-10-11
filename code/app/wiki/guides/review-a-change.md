@@ -58,7 +58,7 @@ Open the module and look for three things:
 | Take it back | "Take back the Customer column change. Leave everything else." |
 
 {% callout title="Checkpoints use git" %}
-There is no checkpoint or undo button in the app yet. Claude saves
+A checkpoint and undo button in the app is planned, not built. Claude saves
 checkpoints and takes changes back with git, a tool that keeps the history of
 your app's folder. If your folder does not use git yet, ask Claude to set it
 up. [Checkpoints](/wiki/advanced/checkpoints) explains how it works.

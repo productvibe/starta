@@ -20,8 +20,8 @@ deletes that file. Your data file stays where it is unless you say otherwise.
 | `id` | The web address, such as `/people` | `"people"` |
 | `file` | The data file in `app/data/` | `"people.json"` |
 
-Settings shows these facts for each module. Settings is read-only: you change a
-module by asking Claude.
+Settings shows these facts for each module. A module's section is read-only:
+you change a module by asking Claude.
 
 ## Rename a module
 
@@ -50,7 +50,7 @@ The gaps of ten leave room for your own modules.
 "Put Accounts between Tasks and People in the sidebar."
 
 Claude gives Accounts an order of 15. The page you open at
-http://localhost:9920 is the first module in the sidebar.
+http://localhost:9950 is the first module in the sidebar.
 
 ## Change the icon or the view
 

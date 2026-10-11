@@ -11,7 +11,7 @@ it is for, the steps with prompts you can copy, what to check, and the common
 problems.
 
 The guides assume you have done the first hour of [Learn](/wiki/learn): your
-app runs at http://localhost:9920, and you talk to Claude in the Code tab of
+app runs at http://localhost:9950, and you talk to Claude in the Code tab of
 the Claude desktop app, opened on your app's folder.
 
 ## The guides
@@ -37,8 +37,8 @@ the Claude desktop app, opened on your app's folder.
   question. You own the app, so you decide what stays.
 
 {% callout title="Not built yet" %}
-There is no undo button inside the app yet. Claude can save a checkpoint and
-take a change back with git when you ask; see
+An undo button inside the app is planned, not built. Claude can save a
+checkpoint and take a change back with git when you ask; see
 [Checkpoints](/wiki/advanced/checkpoints).
 {% /callout %}
 

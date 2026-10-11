@@ -4,7 +4,7 @@ description: Claude interviews you about your role and writes your About page.
 order: 3
 ---
 
-In this lesson Claude interviews you about your job and writes the About page from your answers. Time: 10 minutes.
+In this lesson Claude interviews you about your job and writes the About page from your answers. If you started from the setup prompt in [lesson 1](/wiki/learn/start), Claude has already interviewed you once: use this lesson to check About, correct it, or run a fuller interview. Time: 10 minutes.
 
 ## Goal
 
@@ -16,7 +16,7 @@ About is how Claude knows who you are. With it, Claude can suggest columns that 
 
 ## Steps
 
-1. **Open About** in your browser. It shows the example role: a customer success manager at Brightlane. Keep the tab open.
+1. **Open About** in your browser. It shows the role Claude wrote in lesson 1, or the example role, a customer success manager at Brightlane, if Claude has not interviewed you yet. Keep the tab open.
 2. **Start the interview.** In the Code tab, type:
 
    "Interview me to fill in About. Ask one question at a time, in plain words. Cover my job title, my team, my organisation, what my role is for, who I work with most, and what the first months are about. When you have enough, show me the draft before you write it."
@@ -64,7 +64,7 @@ The rule in your app is that Claude fills About only by interviewing you. It nev
 
 ## Sam's interview
 
-Claude asked Sam seven questions. The answers were short: "Customer success manager." "Customer Success team, Brightlane." "I keep our mid-size customers happy, renewing and growing." "Mostly heads of operations and IT leads at our customers, and Product and Support inside Brightlane." "I am new, so the first months are about learning the accounts and getting the renewals right."
+In lesson 1, Claude asked Sam a few quick questions. Here Sam asked for the fuller interview, and Claude asked seven questions. The answers were short: "Customer success manager." "Customer Success team, Brightlane." "I keep our mid-size customers happy, renewing and growing." "Mostly heads of operations and IT leads at our customers, and Product and Support inside Brightlane." "I am new, so the first months are about learning the accounts and getting the renewals right."
 
 Claude showed Sam a draft of three paragraphs. Sam changed one line, from "manages accounts" to "keeps customers happy, renewing and growing", and said "Write it." The About tab reloaded with the new page.
 

@@ -70,8 +70,8 @@ to.
 
 > "This works. Save a checkpoint called 'People has Next meeting'."
 
-There is no checkpoint button in the app yet. Claude saves checkpoints with
-git, and can take you back to one when you ask. See
+A checkpoint button in the app is planned, not built. Claude saves
+checkpoints with git, and can take you back to one when you ask. See
 [Checkpoints](/wiki/advanced/checkpoints).
 
 ### 7. Iterate

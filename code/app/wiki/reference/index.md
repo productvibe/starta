@@ -30,7 +30,7 @@ For the why, read [The idea](/wiki/idea). For the how, read
 
 | Fact | Value |
 |---|---|
-| Address of your app | http://localhost:9920 |
+| Address of your app | http://localhost:9950 |
 | Where you talk to Claude | The Code tab of the Claude desktop app, opened on your app's folder |
 | Where your data lives | `app/data/`, one file per module |
 | Where module files live | `app/src/modules/`, one `.json` file per module |

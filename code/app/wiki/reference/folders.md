@@ -95,7 +95,7 @@ See [Kit updates](/wiki/advanced/kit-updates) for how a `.kit` file is merged.
 |---|---|
 | `app/node_modules/` | Software the app depends on, installed by Claude |
 | `app/build/`, `app/.react-router/` | Generated when the app is built; rebuilt each time |
-| `.git/` | The record of every checkpoint. Claude works with it through git |
+| `.git/` | The record of every checkpoint, once Claude has set up git. Claude works with it through git |
 | `.claude/` | Claude's own settings for this folder |
 
 None of these hold your content. If one goes missing, Claude can rebuild it,
