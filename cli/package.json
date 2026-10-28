@@ -1,6 +1,6 @@
 {
   "name": "starta-cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Start your own work app and add, remove and update its modules.",
   "type": "module",
   "bin": {

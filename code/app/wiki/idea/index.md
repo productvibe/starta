@@ -26,7 +26,7 @@ joins the three, for one person and one job.
 
 ## What you start with
 
-Your app starts with five modules in the sidebar:
+Your app starts with up to five modules in the sidebar. You pick them on Create; About is always in:
 
 | Module | What it holds |
 |---|---|

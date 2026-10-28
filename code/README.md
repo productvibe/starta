@@ -5,7 +5,8 @@ own job, one maintained set of data with a structured interface on top, kept
 current by Claude. You are its owner, operator, builder and end user. It runs
 on your own machine, with no hosting, sign-in or connectors.
 
-It starts with five modules in the sidebar, each with a section in Settings:
+It starts with up to five modules in the sidebar, each with a page in Settings.
+About is always in; the others can be left out at the start and added later:
 
 - **Tasks** (`/tasks`): what you have to do, as a task list you tick off;
   the app opens here;
@@ -33,17 +34,19 @@ The app root is `app/`, so run all `npm` from there. `npm run dev` serves on
 | Block | The reusable thing a module is built from: a screen and a data shape (`app/src/blocks/`) |
 | Component | A shadcn piece inside a block (`app/src/components/ui/`) |
 | View | How a datatable module shows its rows: `table`, `task` or `goal` |
-| Section | A part of Settings; each module has one |
+| Settings page | A page in Settings; each module has one, and Appearance has one |
+| Section | A folder of pages in the wiki, such as `learn/` |
 
 Blocks are named for their shape, modules for their purpose: `profile`
-(About), `datatable` (Tasks, People, Goals) and `pages` (Wiki).
+(About), `datatable` (Tasks, People, Goals) and `pages` (Wiki). `pages` is
+built into the app, so it has no folder in `app/src/blocks/`.
 
 ## Layout
 
 ```
 CLAUDE.md                    how Claude works on this app
 product/DESIGN.md            the table rules
-kit/starter.json             the modules a new app starts with
+kit/starter.json             the modules a new app starts with: all five
 starta.json                  the modules installed from the kit (in an app made by `starta init`)
 app/                         the React Router app
   data/                      one data file per module: about.md (Markdoc), and tasks, people, goals
@@ -77,7 +80,7 @@ app/                         the React Router app
 ## Modules
 
 A module is one file in `app/src/modules/` plus one data file, with no new
-code. The sidebar, the route and the Settings section come from that file, and
+code. The sidebar, the route and the Settings page come from that file, and
 deleting it removes the module.
 
 A module file has:

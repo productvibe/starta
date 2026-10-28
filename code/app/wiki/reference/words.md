@@ -13,13 +13,14 @@ ask it: "Explain what you mean by that, in one sentence."
 | Word | Meaning |
 |---|---|
 | Work app | A custom app you build for your own job: one maintained set of data with a structured screen on top, kept current by Claude |
-| Starter | The modules every work app starts with: About, Goals, Tasks, People and Wiki |
+| Starter | The kit's five modules: About, Goals, Tasks, People and Wiki. A new app gets all five unless you pick fewer; About is always in |
 | Kit | The source a work app is copied from: its code, its modules and its blocks |
 | Module | What the sidebar lists, such as Tasks or People. A module is one module file plus one data file, built on a block |
 | Block | The reusable thing a module is built from: a screen and a data shape. One block can serve many modules |
 | Component | A small interface piece inside a block, such as a button, a table or a sheet. They come from shadcn |
 | View | How a datatable module shows its rows: `table` (a table), `task` (a checkbox list) or `goal` (goal cards) |
-| Section | A part of Settings. Each module has one, and there is one for Appearance |
+| Settings page | A page in Settings. Each module has one, and there is one for Appearance |
+| Section | A folder of pages in the wiki, such as Learn or Guides |
 | Sidebar | The list of modules on the left of the app, in the order set by each module file |
 | Settings | The page that shows each module's name, block, view, data file and fields, which are read-only, and Appearance, where you pick the colour of buttons and charts |
 

@@ -5,8 +5,7 @@
 //
 // What each file in the kit is follows from where it lives, not from a list:
 //
-//   module  app/src/modules/<id>.json, its skill .claude/skills/<id>/,
-//           and its data file app/data/<file> (copied once, never tracked)
+//   module  app/src/modules/<id>.json and its data file app/data/<file> (copied once, never tracked)
 //   block   app/src/blocks/<block>/, with block.json; its `data` folders
 //           are copied once, never tracked
 //   content app/data/, app/wiki/: the person's, copied once at init
@@ -25,7 +24,6 @@ import { THEME_FILES } from "./preset.mjs"
 
 const MODULE_RE = /^app\/src\/modules\/([^/]+)\.json$/
 const BLOCK_RE = /^app\/src\/blocks\/([^/]+)\//
-const SKILL_RE = /^\.claude\/skills\/([^/]+)\//
 const CONTENT_RE = /^app\/(data|wiki)\//
 const SETUP = new Set(["app/package.json", "app/package-lock.json"])
 const THEME = new Set(Object.values(THEME_FILES))
@@ -99,8 +97,6 @@ export function openKit(source, ref) {
     content: [],
     blocks: {},
     modules: {},
-    skills: {},
-    templates: {},
   }
 
   for (const file of files) {
@@ -109,8 +105,6 @@ export function openKit(source, ref) {
       kit.modules[m[1]] = { ...readJson(dir, file), path: file }
     } else if ((m = file.match(BLOCK_RE))) {
       ;(kit.blocks[m[1]] ??= { files: [] }).files.push(file)
-    } else if ((m = file.match(SKILL_RE))) {
-      ;(kit.skills[m[1]] ??= []).push(file)
     } else if (CONTENT_RE.test(file) || SETUP.has(file)) {
       kit.content.push(file)
     } else {
@@ -126,30 +120,10 @@ export function openKit(source, ref) {
     }
   }
 
-  // What every app starts with; a template adds its modules to these.
+  // What `init` gives without `--modules`: the default ticks on Create.
   kit.starter = readJson(dir, "kit/starter.json").modules
 
-  const templateDir = path.join(dir, "kit", "templates")
-  for (const file of listTemplates(dir)) {
-    kit.templates[path.basename(file, ".json")] = readJson(templateDir, file)
-  }
-
   return kit
-}
-
-function listTemplates(dir) {
-  const out = git(
-    dir,
-    "ls-files",
-    "--cached",
-    "--others",
-    "--exclude-standard",
-    "kit/templates",
-  )
-  return out
-    .split("\n")
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => path.basename(f))
 }
 
 export function readJson(dir, file) {
@@ -183,13 +157,13 @@ export function blockSeed(kit, name) {
     .filter(Boolean)
 }
 
-/** Everything that makes up a module apart from its block: its file and
- *  skill (tracked), and its data file (copied once). */
+/** Everything that makes up a module apart from its block: its file
+ *  (tracked) and its data file (copied once). */
 export function moduleFiles(kit, id) {
   const module = kit.modules[id]
   if (!module) throw new Error(`the kit has no module "${id}"`)
   return {
-    tracked: [module.path, ...(kit.skills[id] ?? [])],
+    tracked: [module.path],
     seed: module.file ? [`app/data/${module.file}`] : [],
   }
 }
