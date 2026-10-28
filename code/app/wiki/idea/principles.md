@@ -10,8 +10,8 @@ you are unsure about a change, check it against the test at the end.
 
 ## 1. Nothing arrives finished
 
-Your app starts small on purpose, with five modules: About, Goals, Tasks,
-People and Wiki. Every module opens with example data,
+Your app starts small on purpose, with at most five modules: About, Goals,
+Tasks, People and Wiki. Every module opens with example data,
 so you never face an empty screen, but none of it is yours yet.
 
 You make it yours by changing it: your role in About, your people, your
@@ -24,7 +24,8 @@ The starter modules and their blocks are starting material. Read them, change
 them and outgrow them.
 
 - **The starter set** is the same for everyone: About, Goals, Tasks, People
-  and Wiki. There are no templates per job. You shape the set to your own job,
+  and Wiki. You can leave any of them out but About, and add it back later.
+  There are no templates per job. You shape the set to your own job,
   and build your own modules on it.
 - **A block** is the reusable piece a module is built from. Tasks and People
   are two modules on one block, the datatable, in two views. That shows you

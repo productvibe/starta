@@ -29,9 +29,9 @@ You are the one who runs this app. Nobody starts it for you, so the first thing 
 2. **Approve the steps.** Claude runs the command, which makes the `my-work` folder, copies the kit into it and installs what the app needs. Then Claude starts the app. You approve each command. Installing takes a minute or two.
 3. **Open the app.** Claude opens `http://localhost:9950` in your browser. If it does not, open that address yourself. Keep this tab open for the whole hour.
 4. **Answer Claude's questions.** Claude interviews you about your role, one short question at a time, and writes About from your answers. Then it asks what you are measured on and puts your goals in Goals. Short answers are fine. Lessons 2 and 3 show you how to check and improve what Claude wrote.
-5. **Look at the sidebar.** You see five modules: Tasks, People, Goals, Wiki and About, with Settings at the bottom and a Search box at the top.
+5. **Look at the sidebar.** You see the modules you picked, five unless you picked fewer: Tasks, People, Goals, Wiki and About, with Settings at the bottom and a Search box at the top.
 6. **Open each module once.** Click Tasks, then People, then Goals, then Wiki, then About. Tasks and People still hold example content.
-7. **Open Settings.** Click Settings, then Tasks. This is the Tasks section. It shows the module's name, its block, its view, its data file and its fields. A module's section is read-only: you change a module by asking Claude. The Appearance section sets the colour of buttons and charts in your browser.
+7. **Open Settings.** Click Settings, then Tasks. This is the Tasks page in Settings. It shows the module's name, its block, its view, its data file and its fields. A module's Settings page is read-only: you change a module by asking Claude. The Appearance page sets the colour of buttons and charts in your browser.
 8. **Make one change on screen.** Go back to Tasks and tick a task done. It moves out of the Open list. Click Done at the top to see it there, then untick it.
 9. **Ask Claude where things are.** Type:
 
@@ -64,7 +64,7 @@ Tell Claude what you see, in plain words: "The browser says it cannot reach loca
 - The app is open at `http://localhost:9950`.
 - Claude has asked about your role and your goals.
 - You have opened Tasks, People, Goals, Wiki and About.
-- You have found the Tasks section in Settings.
+- You have found the Tasks page in Settings.
 - You have ticked a task done and unticked it.
 
 ## What changed on disk

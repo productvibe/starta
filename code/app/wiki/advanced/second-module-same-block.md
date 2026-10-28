@@ -32,7 +32,7 @@ Two files make a module:
 | `app/data/<id>.json` | The rows, as `{ "items": [...] }` | `accounts.json` |
 
 The app finds its modules by reading the modules folder. A new module file gives you a
-sidebar entry, a page at `/<id>` and a section in Settings, all from that file.
+sidebar entry, a page at `/<id>` and a page in Settings, all from that file.
 The block's code is shared: a fix to the datatable reaches every module on it.
 
 The parts of a module file you choose:

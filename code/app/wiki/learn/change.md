@@ -62,7 +62,7 @@ Keep the app open in your browser beside the Code tab, so you see each change la
 | People above Tasks | The sidebar order |
 | Rename, then undo | Contacts in the sidebar, then People again |
 
-The People section in Settings now lists Region among its fields. Your data was not touched: every person you added is still there.
+The People page in Settings now lists Region among its fields. Your data was not touched: every person you added is still there.
 
 {% callout title="Checkpoints today, and later" %}
 A checkpoint and undo button inside the app is planned, not built. Today a checkpoint is a version Claude saves with git, a tool that keeps every saved version of your folder, and undo means Claude puts files back from that history. A new app does not use git until Claude sets it up at your first checkpoint. You ask in words, as above. See [Checkpoints and undo](/wiki/advanced/checkpoints) for how it works and how to go back further than one step.

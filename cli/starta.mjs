@@ -78,7 +78,6 @@ const { values: opts, positionals } = parseArgs({
   options: {
     kit: { type: "string" },
     to: { type: "string" },
-    template: { type: "string" },
     preset: { type: "string" },
     modules: { type: "string" },
     all: { type: "boolean", default: false },
@@ -105,14 +104,7 @@ function init([folder]) {
 
   const source = kitSource()
   const kit = openKit(source, opts.to)
-  const template = opts.template && kit.templates[opts.template]
-  if (opts.template && !template)
-    throw new Error(
-      `the kit has no template "${opts.template}" (it has: ${Object.keys(kit.templates).join(", ")})`,
-    )
-  const modules = [
-    ...new Set([...pickedModules(kit), ...(template?.modules ?? [])]),
-  ]
+  const modules = pickedModules(kit)
   const code = presetCode(opts.preset ?? encodePreset(DEFAULT_PRESET))
 
   const blocks = blocksFor(kit, modules)
@@ -146,8 +138,7 @@ function init([folder]) {
   }
 
   commit(root, kit, changes, state, { install: true })
-  const kind = template ? `${template.title ?? opts.template} ` : ""
-  say(`Started a ${kind}work app in ${folder}, with ${titles(kit, modules)}.`)
+  say(`Started a work app in ${folder}, with ${titles(kit, modules)}.`)
   say(`Next: cd ${folder}/app && npm run dev`)
 }
 
@@ -251,8 +242,6 @@ function remove([id]) {
   if (!module) throw new Error(`"${id}" is not in this app`)
 
   const changes = [{ op: "delete", file: `app/src/modules/${id}.json` }]
-  for (const file of filesUnder(root, `.claude/skills/${id}`))
-    changes.push(dropTracked(root, state, file))
   if (module.file)
     changes.push({
       op: "keep",

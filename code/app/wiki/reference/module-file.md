@@ -5,7 +5,7 @@ order: 4
 ---
 
 A module is one file in `app/src/modules/`, named `<id>.json`, plus one data
-file in `app/data/`. The sidebar entry, the page and the Settings section all
+file in `app/data/`. The sidebar entry, the page and the Settings page all
 come from the module file, so adding the file adds the module and deleting it
 removes the module. This page is the full format. You do not write these files
 yourself; it helps to read them when you check what Claude made.

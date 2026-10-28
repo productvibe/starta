@@ -20,7 +20,7 @@ deletes that file. Your data file stays where it is unless you say otherwise.
 | `id` | The web address, such as `/people` | `"people"` |
 | `file` | The data file in `app/data/` | `"people.json"` |
 
-Settings shows these facts for each module. A module's section is read-only:
+Settings shows these facts for each module. A module's Settings page is read-only:
 you change a module by asking Claude.
 
 ## Rename a module

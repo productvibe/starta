@@ -39,7 +39,7 @@ Until now you have changed what came in the box. Now you add something the box d
 
 ## What you see
 
-Accounts sits in the sidebar and looks like People, because both are built on the same block, the datatable, in the table view. It has Sort, Filter and **Add item**, a sheet for each row, and its own section in Settings.
+Accounts sits in the sidebar and looks like People, because both are built on the same block, the datatable, in the table view. It has Sort, Filter and **Add item**, a sheet for each row, and its own page in Settings.
 
 | Field kind | Use it for | Example |
 |---|---|---|

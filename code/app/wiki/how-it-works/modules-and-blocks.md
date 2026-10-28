@@ -1,6 +1,6 @@
 ---
 title: Modules and blocks
-description: What a module, a block, a view and a section are, and why a new module needs no new code.
+description: What a module, a block, a view and a Settings page are, and why a new module needs no new code.
 order: 2
 ---
 
@@ -17,7 +17,7 @@ they need no new code.
 | Block | The reusable screen and data shape a module is built from | datatable |
 | Component | A small interface piece inside a block | A button, a table, a dialog |
 | View | How a datatable module shows its rows | `table`, `task` or `goal` |
-| Section | A part of Settings; each module has one | Settings → Tasks |
+| Settings page | A page in Settings; each module has one | Settings → Tasks |
 
 Blocks are named for their shape, modules for their purpose, so the two never
 share a name.
@@ -28,11 +28,14 @@ share a name.
 |---|---|---|
 | profile | One page about you | About |
 | datatable | Rows with columns you define, in a table, task or goal view | Tasks, People, Goals, and your own |
-| pages | Markdoc pages in a tree, with a reader | Wiki |
+| pages | Markdoc pages in a tree, with a reader. Built into the app, so it has no folder in `app/src/blocks/` | Wiki |
 
-Every app starts with the same five modules: About, Goals, Tasks, People and
-Wiki. There are no templates to choose from, and no module to add later: the
-modules you add are the ones you build yourself, such as Accounts.
+The kit has five modules: About, Goals, Tasks, People and Wiki. A new app
+gets all five unless you pick fewer on Create. About is always in. A module
+you left out can be added back later, and one you no longer want can be taken
+out: ask Claude, and it runs the `starta` command. There are no templates per
+job: beyond these five, the modules you add are the ones you build yourself,
+such as Accounts.
 
 ## Why Tasks and People share a block
 
@@ -72,21 +75,21 @@ its field list:
 | `id` | The address, `/people` |
 | `title` | The name in the sidebar |
 | `block` | The block it is built on |
-| `view` | For a datatable: `table` or `task` |
+| `view` | For a datatable: `table`, `task` or `goal` |
 | `icon` | The sidebar mark; an unknown name gets a default mark |
 | `file` | Its data file in `app/data/` |
 | `order` | Its place in the sidebar, lowest first |
-| `purpose` | One line, shown in its Settings section |
+| `purpose` | One line, shown on its Settings page |
 | `fields` | For a datatable: its columns and their kinds |
 
 ## The sidebar comes from the module files
 
 The app finds its modules by reading the folder of module files, and builds
-three things from them: the sidebar, each module's page, and each module's section in
+three things from them: the sidebar, each module's page, and each module's page in
 Settings. So:
 
 - **Add a module file** and a new item appears in the sidebar, with its page and
-  its Settings section.
+  its Settings page.
 - **Change `title` or `order`** and the sidebar changes.
 - **Delete the module file** and the module disappears. Its data file stays in
   `app/data/` until you decide otherwise.
@@ -94,7 +97,7 @@ Settings. So:
 The kit's modules sit in this order: Tasks 10, People 20, Goals 35,
 Wiki 60, About 70. About is always last.
 
-A Settings section is read-only. It shows the module's name, block, view, data
+A module's Settings page is read-only. It shows the module's name, block, view, data
 file and fields. To change any of them, ask Claude.
 
 ## Worked example: Accounts
@@ -112,7 +115,7 @@ Claude writes two files and no code:
 | `app/data/accounts.json` | Sam's rows, starting with Tallow & Co and Harbourline Logistics |
 
 Claude opens the new module to check it. Accounts now sits in the sidebar, with
-its own page and its own Settings section. The datatable block is the same one Tasks and People use.
+its own page and its own Settings page. The datatable block is the same one Tasks and People use.
 
 A module that needs a screen no block offers, such as a board, means changing a
 block or building a new one. That is a bigger step, covered in
