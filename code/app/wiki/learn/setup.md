@@ -45,7 +45,7 @@ Claude asks for your approval before it runs anything on your laptop. That is no
 
 Claude then answers with something like: "Node.js 22 and Git are installed. Node.js 22 is newer than 20.12. You are ready to start."
 
-On starta.dev/create you choose from five themes (Neutral, which is shadcn/ui's default look and the default here, then Notion, Airbnb, Stripe and Neo-brutalist), eight colours (Grey is the default), six fonts (Geist is the default) and 48 logos (Rocket is the default). You can change the look later by asking Claude.
+On starta.dev/create you choose from six themes (Neutral, which is shadcn/ui's default look and the default here, then Notion, Airbnb, Stripe, Neo-brutalist and Linear), nine colours (Grey is the default), six fonts (Geist is the default) and 48 logos (Rocket is the default). You can change the look later by asking Claude.
 
 {% callout title="Not built yet: a preflight check" %}
 The kit is meant to check your laptop by itself and say what is missing before anything else happens. That check does not exist yet, so you ask Claude to do it, as in step 3.

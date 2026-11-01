@@ -808,6 +808,185 @@ main [role="tab"][aria-selected="true"],
   font-weight: 500;
 }`,
   },
+  {
+    id: "linear",
+    label: "Linear",
+    radius: "0.5rem",
+    note:
+      "Linear's app, measured on linear.app (its in-page app render and CSS " +
+      "tokens) and the light screenshots in linear.app/docs (2026-11-01): a " +
+      "near-white page #FCFCFD on a grey sidebar, near-black text, hairline " +
+      "#E3E3E4 edges, 13px medium sidebar rows 28px tall on 8px corners, " +
+      "pill view tabs and labels, round icon buttons, flat cards, menus on a " +
+      "soft shadow, semibold headings pulled in, Linear's indigo #5E6AD2, Inter",
+    colour: "iris",
+    font: "inter",
+    // Light from the docs screenshots: page #FCFCFD, the chosen pill and
+    // icon buttons #EFEFF0, a row under the pointer #F6F6F6, edges #E3E3E4,
+    // rules #EDEDEE, placeholders #8C8C8F. The sidebar's grey is estimated:
+    // the screenshots crop it, so it is the step below the page that the
+    // dark app shows. Dark from the linear.app render: sidebar #090A0B,
+    // the view #101112, menus #161718, text #D0D6E0, secondary #8A8F98,
+    // tertiary #62666D, edges white at 8 %.
+    light: {
+      background: "rgb(252 252 253)",
+      foreground: "rgb(32 32 34)",
+      card: "rgb(255 255 255)",
+      "card-foreground": "rgb(32 32 34)",
+      popover: "rgb(255 255 255)",
+      "popover-foreground": "rgb(32 32 34)",
+      secondary: "rgb(239 239 240)",
+      "secondary-foreground": "rgb(32 32 34)",
+      muted: "rgb(246 246 246)",
+      "muted-foreground": "rgb(96 97 101)",
+      accent: "rgb(239 239 240)",
+      "accent-foreground": "rgb(32 32 34)",
+      destructive: "rgb(235 87 87)",
+      border: "rgb(227 227 228)",
+      input: "rgb(227 227 228)",
+      sidebar: "rgb(245 245 246)",
+      "sidebar-foreground": "rgb(32 32 34)",
+      "sidebar-accent": "rgb(232 232 234)",
+      "sidebar-accent-foreground": "rgb(32 32 34)",
+      "sidebar-border": "rgb(232 232 234)",
+      block: "rgb(246 246 246)",
+      grid: "rgb(237 237 238)",
+      icon: "rgb(96 97 101)",
+      faint: "rgb(140 140 143)",
+      kbd: "rgb(239 239 240)",
+      "kbd-foreground": "rgb(96 97 101)",
+    },
+    dark: {
+      background: "rgb(16 17 18)",
+      foreground: "rgb(208 214 224)",
+      card: "rgb(16 17 18)",
+      "card-foreground": "rgb(208 214 224)",
+      popover: "rgb(22 23 24)",
+      "popover-foreground": "rgb(208 214 224)",
+      secondary: "rgb(255 255 255 / 5%)",
+      "secondary-foreground": "rgb(208 214 224)",
+      muted: "rgb(255 255 255 / 4%)",
+      "muted-foreground": "rgb(138 143 152)",
+      accent: "rgb(255 255 255 / 5%)",
+      "accent-foreground": "rgb(208 214 224)",
+      destructive: "rgb(235 87 87)",
+      border: "rgb(255 255 255 / 8%)",
+      input: "rgb(255 255 255 / 8%)",
+      sidebar: "rgb(9 10 11)",
+      "sidebar-foreground": "rgb(208 214 224)",
+      "sidebar-accent": "rgb(255 255 255 / 5%)",
+      "sidebar-accent-foreground": "rgb(208 214 224)",
+      "sidebar-border": "rgb(255 255 255 / 5%)",
+      block: "rgb(255 255 255 / 2%)",
+      grid: "rgb(255 255 255 / 5%)",
+      icon: "rgb(138 143 152)",
+      faint: "rgb(98 102 109)",
+      kbd: "rgb(255 255 255 / 5%)",
+      "kbd-foreground": "rgb(138 143 152)",
+    },
+    css: `/* Linear draws its surfaces flat: a hairline, no shadow. Menus and
+   dialogs float on a soft shadow inside their edge. */
+[data-slot="card"] {
+  border-color: var(--border);
+  box-shadow: none;
+}
+${OVERLAYS} {
+  border-color: var(--border);
+  box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+}
+.dark :is(${OVERLAYS}) {
+  box-shadow: 0 2px 32px rgb(0 0 0 / 25%);
+}
+/* Sidebar rows: 28px, 13px medium, 8px corners, 16px glyphs in the
+   secondary grey. The open row a grey fill with the glyph in the text
+   colour, as Linear's is; the accent stays for buttons and ticks. */
+[data-slot="sidebar-menu-button"] {
+  height: 1.75rem;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+[data-slot="sidebar-menu-button"] svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--icon);
+}
+[data-slot="sidebar-menu-button"][data-active] {
+  background-color: var(--sidebar-accent);
+  color: var(--sidebar-accent-foreground);
+}
+[data-slot="sidebar-menu-button"][data-active] svg {
+  color: var(--sidebar-accent-foreground);
+}
+[data-slot="sidebar-group-label"] {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+/* Buttons: 6px corners, medium, 13px; an icon button is round. */
+[data-slot="button"] {
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 13px;
+}
+[data-slot="button"]:is(
+    [class~="size-6"],
+    [class~="size-7"],
+    [class~="size-8"],
+    [class~="size-9"]
+  ) {
+  border-radius: 9999px;
+}
+/* Headings: semibold, pulled in. */
+h1,
+h2,
+[data-slot="card-title"] {
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+/* View tabs: pills with a hairline edge, the chosen one on the grey fill. */
+main [role="tablist"],
+[data-slot="tabs-list"] {
+  background: transparent;
+  padding: 0;
+  gap: 6px;
+}
+main [role="tab"],
+[data-slot="tabs-trigger"] {
+  border-radius: 9999px;
+  padding-inline: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+main [role="tab"][aria-selected="true"],
+[data-slot="tabs-trigger"][data-active] {
+  background-color: var(--secondary);
+  color: var(--foreground);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+/* Labels: pills with a hairline edge, medium, in the secondary grey. */
+[data-slot="badge"] {
+  border-radius: 9999px;
+  border-color: var(--border);
+  font-weight: 500;
+}
+/* Lists: row rules only; a row under the pointer takes the grey. */
+[data-slot="table-head"],
+[data-slot="table-cell"] {
+  border-right-width: 0;
+}
+[data-slot="table-head"] {
+  font-weight: 500;
+}
+[data-slot="table-body"] [data-slot="table-row"]:hover {
+  background-color: var(--muted);
+}
+/* The side peek: an edge and the menus' shadow. */
+[data-slot="sheet-content"] {
+  border-left-color: var(--border);
+}`,
+  },
 ]
 
 /** The highlights in the picked colour, in every style: the active menu
@@ -880,6 +1059,12 @@ export const COLOURS = [
     "rgb(99 91 255)",
     "rgb(255 255 255)",
     "rgb(99 91 255 / 57%)",
+  ]),
+  // Linear's indigo (--color-indigo, linear.app 2026-11-01).
+  colour("iris", "Iris", 277, [
+    "rgb(94 106 210)",
+    "rgb(255 255 255)",
+    "rgb(94 106 210 / 57%)",
   ]),
 ]
 

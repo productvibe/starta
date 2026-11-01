@@ -12,6 +12,9 @@ export const COLOURS = [
   { id: "purple", label: "Purple" },
   { id: "orange", label: "Orange" },
   { id: "pink", label: "Pink" },
+  { id: "red", label: "Red" },
+  { id: "indigo", label: "Indigo" },
+  { id: "iris", label: "Iris" },
 ] as const
 
 export type Colour = (typeof COLOURS)[number]["id"]

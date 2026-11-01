@@ -157,6 +157,27 @@
   --ring: rgb(209 87 150 / 57%);
   --sidebar-ring: rgb(209 87 150 / 57%);
 }
+/* Airbnb's Rausch, the red the Airbnb theme picks (cli/lib/preset.mjs COLOURS). */
+[data-accent="red"] {
+  --primary: rgb(255 56 92);
+  --primary-foreground: rgb(255 255 255);
+  --ring: rgb(255 56 92 / 57%);
+  --sidebar-ring: rgb(255 56 92 / 57%);
+}
+/* Stripe's blurple, the indigo the Stripe theme picks (cli/lib/preset.mjs COLOURS). */
+[data-accent="indigo"] {
+  --primary: rgb(99 91 255);
+  --primary-foreground: rgb(255 255 255);
+  --ring: rgb(99 91 255 / 57%);
+  --sidebar-ring: rgb(99 91 255 / 57%);
+}
+/* Linear's indigo, the iris the Linear theme picks (cli/lib/preset.mjs COLOURS). */
+[data-accent="iris"] {
+  --primary: rgb(94 106 210);
+  --primary-foreground: rgb(255 255 255);
+  --ring: rgb(94 106 210 / 57%);
+  --sidebar-ring: rgb(94 106 210 / 57%);
+}
 
 /* Report tints (Settings → Appearance). A reader may swap the grey chart
    ramp for a ramp of ONE hue, light to dark in the same five steps, so ramp
@@ -205,6 +226,27 @@
   --chart-3: oklch(0.6 0.11 350);
   --chart-4: oklch(0.49 0.1 350);
   --chart-5: oklch(0.37 0.08 350);
+}
+[data-tint="red"] {
+  --chart-1: oklch(0.87 0.05 15);
+  --chart-2: oklch(0.72 0.09 15);
+  --chart-3: oklch(0.6 0.11 15);
+  --chart-4: oklch(0.49 0.1 15);
+  --chart-5: oklch(0.37 0.08 15);
+}
+[data-tint="indigo"] {
+  --chart-1: oklch(0.87 0.05 275);
+  --chart-2: oklch(0.72 0.09 275);
+  --chart-3: oklch(0.6 0.11 275);
+  --chart-4: oklch(0.49 0.1 275);
+  --chart-5: oklch(0.37 0.08 275);
+}
+[data-tint="iris"] {
+  --chart-1: oklch(0.87 0.05 275);
+  --chart-2: oklch(0.72 0.09 275);
+  --chart-3: oklch(0.6 0.11 275);
+  --chart-4: oklch(0.49 0.1 275);
+  --chart-5: oklch(0.37 0.08 275);
 }
 
 @layer base {
